@@ -14,14 +14,7 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-// const lawyerData = [
-//   { lat: -23.463658, lng: -46.5469013, count: 150 }, // Exemplo de São Paulo
-//   { lat: -23.4593908, lng: -46.5201666, count: 100 } // Exemplo do Rio de Janeiro
-//   // Adicione mais dados conforme necessário
-// ];
-
 const MapWithDensity = ({ lawyerData }) => {
-  console.log('lawyerData', lawyerData);
   return (
     <MapContainer
       center={[-23.4622364, -46.5273521]}

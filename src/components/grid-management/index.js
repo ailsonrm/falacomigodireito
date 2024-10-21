@@ -247,11 +247,7 @@ const GridManagement = ({
     'rag-orange': params =>
       params.data.voters &&
       params.data.voters[0] &&
-      params.data.voters[0].status === 'IN_PROGRESS',
-    'rag-gray': params =>
-      !params.data.voters ||
-      params.data.voters.length === 0 ||
-      params.data.voters[0].status === null
+      params.data.voters[0].status === 'IN_PROGRESS'
   };
 
   const clearFilters = () => {
